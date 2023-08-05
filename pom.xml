@@ -65,6 +65,12 @@
       -->
     <!-- keep properties sorted-->
     <properties>
+        <!-- Repo-URLs an unseren Nexus angepasst -->
+        <jboss.releases.repo.id>deg-releases</jboss.releases.repo.id>
+        <jboss.releases.repo.url>https://nexus-be.data-experts.net:8443/repository/maven-releases</jboss.releases.repo.url>
+        <jboss.snapshots.repo.id>deg-snapshots</jboss.snapshots.repo.id>
+        <jboss.snapshots.repo.url>https://nexus-be.data-experts.net:8443/repository/maven-snapshots/</jboss.snapshots.repo.url>
+
         <!-- Byteman -->
         <byteman.host>127.0.0.1</byteman.host>
         <byteman.port>17091</byteman.port>
@@ -151,8 +157,8 @@
         <wildfly.build.output.dir>dist/target/${server.output.dir.prefix}-${wildfly.core.release.version}</wildfly.build.output.dir>
         <!-- Release Info -->
         <wildfly.core.release.version>${project.version}</wildfly.core.release.version>
-        <wildfly.core.scm.connection>git@github.com:wildfly/wildfly-core.git</wildfly.core.scm.connection>
-        <wildfly.core.scm.url>https://github.com/wildfly/wildfly-core</wildfly.core.scm.url>
+        <wildfly.core.scm.connection>git@github.com:data-experts/wildfly-core.git</wildfly.core.scm.connection>
+        <wildfly.core.scm.url>https://github.com/data-experts/wildfly-core</wildfly.core.scm.url>
 
         <!-- WildFly Preview vs standard WildFly GAV expression properties.
              Used to drive maven-resource-plugin filtering for module.xml files
