@@ -506,20 +506,6 @@
                                 </rules>
                             </configuration>
                         </execution>
-                        <execution>
-                            <id>require-java11</id>
-                            <goals>
-                                <goal>enforce</goal>
-                            </goals>
-                            <phase>deploy</phase>
-                            <configuration>
-                                <rules>
-                                    <requireJavaVersion>
-                                        <version>[11,12,17)</version>
-                                    </requireJavaVersion>
-                                </rules>
-                            </configuration>
-                        </execution>
                     </executions>
                 </plugin>
                 <plugin>
